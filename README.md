@@ -35,7 +35,7 @@ Run one real debugging session. Watch the agent ask "what invariant is violated?
 
 Seven more skills at the same depth — test-driven-development, code-review, refactoring-safely, legacy-onboarding, security-audit, api-design, write-docs — plus CLAUDE.md/AGENTS.md templates and a one-command installer:
 
-**[AgentCraft on Gumroad](https://keyinxiao.gumroad.com)** — $19, free updates for v1.x, refund if it doesn't work in your tool of choice.
+**[AgentCraft on Gumroad](https://keyinxiao.gumroad.com/l/agentcraft?offer_code=LAUNCH19)** — **$19 with code LAUNCH19**, free updates for v1.x, refund if it doesn't work in your tool of choice.
 
 ## License
 
