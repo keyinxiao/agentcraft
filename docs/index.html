@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgentCraft — Engineering Discipline Skills for AI Coding Agents (Claude Code, Codex, Gemini CLI)</title>
+<meta name="description" content="8 SKILL.md files that make Claude Code, Codex CLI, Gemini CLI and 30+ AI coding tools follow real engineering discipline: test-first development, systematic debugging, code review, safe refactoring. Free debugging skill, no signup.">
+<meta name="keywords" content="claude code skills, SKILL.md, systematic debugging skill, claude code tdd, codex cli skills, gemini cli skills, AI coding agent discipline, agentskills">
+<link rel="canonical" href="https://keyinxiao.github.io/agentcraft/">
+<style>
+  :root{--bg:#0d1117;--fg:#e6edf3;--muted:#8b949e;--green:#3fb950;--blue:#58a6ff;--card:#161b22;--border:#30363d}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.6;padding:0 20px}
+  .wrap{max-width:880px;margin:0 auto;padding:60px 0 80px}
+  .prompt{color:var(--green);font-family:ui-monospace,Consolas,monospace;font-size:15px;margin-bottom:26px}
+  h1{font-family:ui-monospace,Consolas,monospace;font-size:52px;margin-bottom:14px}
+  h1 span{color:var(--green)}
+  .tagline{color:var(--muted);font-size:20px;margin-bottom:34px}
+  .cta{display:inline-block;background:var(--green);color:#0d1117;font-weight:700;padding:13px 26px;border-radius:8px;text-decoration:none;margin-right:14px;font-size:16px}
+  .cta.ghost{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+  .badges{margin:30px 0 50px;font-family:ui-monospace,Consolas,monospace;color:var(--blue);font-size:15px}
+  h2{font-size:28px;margin:46px 0 18px;border-bottom:1px solid var(--border);padding-bottom:10px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px}
+  .card b{color:var(--blue);font-family:ui-monospace,Consolas,monospace;font-size:15px;display:block;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:14.5px}
+  pre{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;font-family:ui-monospace,Consolas,monospace;font-size:14px;overflow-x:auto;color:var(--fg);margin:18px 0}
+  pre .c{color:var(--green)}
+  .note{background:rgba(63,185,80,.08);border:1px solid var(--green);border-radius:10px;padding:18px;margin:26px 0}
+  .note b{color:var(--green)}
+  ol,ul{margin:14px 0 14px 24px}
+  li{margin-bottom:8px}
+  a{color:var(--blue)}
+  .foot{margin-top:60px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:24px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}h1{font-size:38px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="prompt">$ ./install.sh --discipline</div>
+  <h1>Agent<span>Craft</span></h1>
+  <div class="tagline">Engineering discipline skills for AI coding agents — Claude Code, Codex CLI, Gemini CLI, ChatGPT, Copilot +30 tools.</div>
+  <a class="cta" href="https://keyinxiao.gumroad.com/l/agentcraft?offer_code=LAUNCH19">Get all 8 skills — $19 with code LAUNCH19</a>
+  <a class="cta ghost" href="#free">Try the free debugging skill</a>
+  <div class="badges">8 skills · 30+ tools · open Agent Skills format · free sample, no email wall</div>
+
+  <h2>Why files beat prompts</h2>
+  <p>Instructions typed into a chat die when the session ends. A <code>SKILL.md</code> file sits inside your agent's skills directory and activates automatically whenever the situation matches: a bug triggers the debugging protocol, a new feature triggers test-first. Built on the open <a href="https://agentskills.io">Agent Skills</a> standard — install once, works across the whole ecosystem.</p>
+
+  <h2>The free skill: systematic-debugging</h2>
+  <p>Your agent stops guess-patching. The skill enforces four phases with a standing rule: <strong>no code changes until the failure reproduces on demand</strong> — then binary-search the causal chain, fix the violated invariant (not the symptom), and ship the fix with the regression test that failed first. Intermittent bugs get hunted: state, timing, environment.</p>
+  <pre><span class="c"># Claude Code (personal — applies to every project)</span>
+mkdir -p ~/.claude/skills/systematic-debugging
+curl -o ~/.claude/skills/systematic-debugging/SKILL.md \
+  https://raw.githubusercontent.com/keyinxiao/agentcraft/main/skills/systematic-debugging/SKILL.md
+
+<span class="c"># Or into one project (committed, shared with your team)</span>
+mkdir -p .claude/skills/systematic-debugging
+cp skills/systematic-debugging/SKILL.md .claude/skills/systematic-debugging/</pre>
+  <div class="note"><b>How to judge it:</b> run one real debugging session. Watch the agent ask "what invariant is violated?" instead of pasting a band-aid — then decide whether that depth is worth having across your whole workflow. <a href="https://github.com/keyinxiao/agentcraft">Full source on GitHub</a> (MIT).</div>
+
+  <h2>All 8 skills in the full pack</h2>
+  <div class="grid">
+    <div class="card"><b>test-driven-development</b><p>RED-GREEN-REFACTOR on every behavior change. One test per cycle, mocks only at real boundaries, every bug fix ships with the regression test that failed first.</p></div>
+    <div class="card"><b>systematic-debugging</b><p>Reproduce → isolate → fix the cause → verify. No code changes until the failure is understood. Intermittent = clue, not noise.</p></div>
+    <div class="card"><b>code-review</b><p>Six passes: concrete edge values, security quick pass, test effectiveness ("which test fails if this breaks?"), blast radius, readability.</p></div>
+    <div class="card"><b>legacy-onboarding</b><p>Map before edit: entry points, one request traced end-to-end, load-bearing weirdness, green/yellow/red safe-change zones.</p></div>
+    <div class="card"><b>refactoring-safely</b><p>Behavior-preserving by definition: green-only, one transformation per step, parallel-change signatures, never mixes with feature commits.</p></div>
+    <div class="card"><b>security-audit</b><p>Entry points and trust boundaries, injection sweep, per-route auth, secrets scan with rotation rule. Evidence-only findings.</p></div>
+    <div class="card"><b>api-design</b><p>Resources before endpoints, mandatory pagination, one error envelope, additive-only evolution. Money is integers; time is UTC ISO.</p></div>
+    <div class="card"><b>write-docs</b><p>Every command executed before it is documented; claims linked to code; docs tested on clean clones.</p></div>
+  </div>
+
+  <h2>Also included</h2>
+  <ul>
+    <li><strong>CLAUDE.md template</strong> — repo-level rules: verification habits, minimal diffs, honesty rules</li>
+    <li><strong>AGENTS.md template</strong> — same rules for Codex CLI / Gemini CLI / Cursor</li>
+    <li><strong>install.sh</strong> — one command for all skills, <code>--project</code> to commit them into your team's repo</li>
+  </ul>
+
+  <h2>Who it's for</h2>
+  <ul>
+    <li>Developers tired of re-typing "write a test first" and "don't touch unrelated code" every session</li>
+    <li>Leads who want AI-assisted code in their repo to follow one standard, not eight developer habits</li>
+    <li>Anyone who has watched an agent delete a failing test to make the suite green</li>
+  </ul>
+
+  <div class="foot">
+    Built on the open <a href="https://agentskills.io">Agent Skills</a> format · Free updates for v1.x · 30-day refund if it doesn't work in your tool of choice ·
+    <a href="https://keyinxiao.gumroad.com/l/agentcraft?offer_code=LAUNCH19">Get the pack</a> · <a href="https://github.com/keyinxiao/agentcraft">GitHub</a>
+  </div>
+</div>
+</body>
+</html>
